@@ -1,19 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button @click="AppCLick">AppButton</button>
+    <hello-world msg="hello world" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Emitter from "./emitter.js";
+import HelloWorld from "./components/HelloWorld";
 
 export default {
-  name: 'App',
+  name: "App",
+  mixins: [Emitter],
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+  mounted() {
+    this.$on("btnClick", (text) => {
+      console.log(text);
+    });
+  },
+  methods: {
+    AppCLick() {
+      this.broadcast("IButton", "appClick", "world");
+    },
+  },
+};
 </script>
 
 <style>
