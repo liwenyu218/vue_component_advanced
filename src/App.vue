@@ -1,40 +1,21 @@
 <template>
   <div id="app">
-    <button @click="AppCLick">AppButton</button>
-    <hello-world msg="hello world" />
+    <div id="nav">
+      <ul>
+        <li>
+          <router-link to="/form"
+            >实战 1：具有数据校验功能的表单组件 —— Form</router-link
+          >
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <router-view />
   </div>
 </template>
 
 <script>
-import Emitter from "./emitter.js";
-import HelloWorld from "./components/HelloWorld";
-
-export default {
-  name: "App",
-  mixins: [Emitter],
-  components: {
-    HelloWorld,
-  },
-  mounted() {
-    this.$on("btnClick", (text) => {
-      console.log(text);
-    });
-  },
-  methods: {
-    AppCLick() {
-      this.broadcast("IButton", "appClick", "world");
-    },
-  },
-};
+export default {};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>

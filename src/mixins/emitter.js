@@ -23,7 +23,6 @@ export default {
           name = parent.$options.name;
         }
       }
-      console.log("parent :>> ", parent);
 
       if (parent) {
         parent.$emit(eventName, params);
