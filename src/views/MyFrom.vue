@@ -1,3 +1,12 @@
+<!--
+ * @Author: Liwenyu
+ * @Date: 2023-10-27 10:27:38
+ * @LastEditors: Liwenyu
+ * @LastEditTime: 2023-10-27 17:06:35
+ * @FilePath: \vue_component_advanced\src\views\MyFrom.vue
+ * @Description:
+ *
+-->
 <template>
   <div id="app">
     <h3>具有数据校验功能的表单组件——Form</h3>

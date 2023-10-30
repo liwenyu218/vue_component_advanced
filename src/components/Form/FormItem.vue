@@ -96,6 +96,12 @@ export default {
         return true;
       }
 
+      // 不必须则不校验
+      if (!rules[0].required) {
+        callback();
+        return true;
+      }
+
       // 设置状态为校验中
       this.validateState = "validating";
 

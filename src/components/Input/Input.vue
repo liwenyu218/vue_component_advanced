@@ -19,6 +19,11 @@ export default {
       default: "",
     },
   },
+  watch: {
+    value(val) {
+      this.currentValue = val;
+    },
+  },
   data() {
     return {
       currentValue: this.value,
