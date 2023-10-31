@@ -2,7 +2,7 @@
  * @Author: Liwenyu
  * @Date: 2023-10-24 11:58:42
  * @LastEditors: Liwenyu
- * @LastEditTime: 2023-10-27 15:26:24
+ * @LastEditTime: 2023-10-31 10:04:56
  * @FilePath: \vue_component_advanced\src\App.vue
  * @Description:
  *
@@ -27,6 +27,11 @@
         <li>
           <router-link to="/radio">
             作业 1：组合单选框组件——Radio & RadioGroup
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/display">
+            实战 3：动态渲染 .vue 文件的组件—— Display
           </router-link>
         </li>
       </ul>

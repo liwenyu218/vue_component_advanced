@@ -21,5 +21,9 @@ export default new Router({
       path: "/radio",
       component: () => import("./views/MyRadio.vue"),
     },
+    {
+      path: "/display",
+      component: () => import("./views/MyDisplay.vue"),
+    },
   ],
 });
