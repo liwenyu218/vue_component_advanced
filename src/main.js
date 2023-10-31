@@ -1,8 +1,11 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+import Alert from "./components/Alert/Alert";
 
 Vue.config.productionTip = false;
+
+Vue.prototype.$Alert = Alert;
 
 new Vue({
   router,

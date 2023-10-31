@@ -2,7 +2,7 @@
  * @Author: Liwenyu
  * @Date: 2023-10-24 11:58:42
  * @LastEditors: Liwenyu
- * @LastEditTime: 2023-10-31 10:04:56
+ * @LastEditTime: 2023-10-31 11:48:02
  * @FilePath: \vue_component_advanced\src\App.vue
  * @Description:
  *
@@ -33,6 +33,9 @@
           <router-link to="/display">
             实战 3：动态渲染 .vue 文件的组件—— Display
           </router-link>
+        </li>
+        <li>
+          <router-link to="/alert"> 实战 4：全局提示组件——$Alert </router-link>
         </li>
       </ul>
     </div>

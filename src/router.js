@@ -25,5 +25,9 @@ export default new Router({
       path: "/display",
       component: () => import("./views/MyDisplay.vue"),
     },
+    {
+      path: "/alert",
+      component: () => import("./views/MyAlert.vue"),
+    },
   ],
 });
