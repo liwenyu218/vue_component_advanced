@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button @click="handleOpen1">打开提示1</button>
-    <button @click="handleOpen2">打开提示2</button>
+    <button @click="handleOpen1">成功</button>
+    <button @click="handleOpen2">警告</button>
   </div>
 </template>
 
@@ -11,12 +11,15 @@ export default {
     handleOpen1() {
       this.$Alert.info({
         content: "成功!",
+        type: "success",
+        showClose: true,
       });
     },
 
     handleOpen2() {
       this.$Alert.info({
-        content: "大成功!",
+        content: "警告!",
+        type: "warning",
       });
     },
   },
