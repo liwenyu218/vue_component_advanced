@@ -37,5 +37,17 @@ export default new Router({
       path: "/tableRender",
       component: () => import("./views/MyTableRender.vue"),
     },
+    {
+      path: "/tableSlot",
+      component: () => import("./views/MyTableSlot.vue"),
+    },
+    {
+      path: "/table3",
+      component: () => import("./views/MyTable3.vue"),
+    },
+    {
+      path: "/table4",
+      component: () => import("./views/MyTable4.vue"),
+    },
   ],
 });

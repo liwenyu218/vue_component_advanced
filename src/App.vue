@@ -2,7 +2,7 @@
  * @Author: Liwenyu
  * @Date: 2023-10-24 11:58:42
  * @LastEditors: Liwenyu
- * @LastEditTime: 2023-11-02 16:57:20
+ * @LastEditTime: 2023-11-07 14:58:25
  * @FilePath: \vue_component_advanced\src\App.vue
  * @Description:
  *
@@ -44,7 +44,22 @@
         </li>
         <li>
           <router-link to="/tableRender">
-            实战 5：表格组件 —— Table
+            实战 5：表格组件 —— Table(render实现)
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/tableSlot">
+            实战 6：表格组件 —— Table(slot实现)
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/table3">
+            实战 6：表格组件 —— Table(用render实现slot)
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/table4">
+            实战 6：表格组件 —— Table(第三种方法实现slot)
           </router-link>
         </li>
       </ul>
